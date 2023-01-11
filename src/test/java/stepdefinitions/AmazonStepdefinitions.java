@@ -28,6 +28,7 @@ public class AmazonStepdefinitions {
     @And("arama sonuclarinin Nutellla icerdigini test eder")
     public void aramaSonuclarininNutelllaIcerdiginiTestEder() {
 
+        amazonPage = new AmazonPage();
         String actualKelime = amazonPage.aramaSonucElementi.getText();
         String expectedKelime = "Nutella";
 
@@ -67,6 +68,34 @@ public class AmazonStepdefinitions {
         String expectedKelime = "Samsung";
 
         Assert.assertTrue(actualKelime.contains(expectedKelime));
+
+    }
+
+    @Then("amazon arama kutusuna {string} yazip aratir")
+    public void amazonAramaKutusunaYazipAratir(String aranacakKelime ) {
+        amazonPage = new AmazonPage();
+        amazonPage.aramaKutusu.sendKeys(aranacakKelime + Keys.ENTER);
+
+    }
+
+    @And("arama sonuclarinin {string} icerdigini test eder")
+    public void aramaSonuclarininIcerdiginiTestEder(String arananKelime ) {
+        String actualKelime = amazonPage.aramaSonucElementi.getText();
+
+        Assert.assertTrue(actualKelime.contains(arananKelime));
+    }
+
+    @Given("kullanici {string} anasayfaya gider")
+    public void kullaniciAnasayfayaGider(String istenenUrl) {
+        Driver.getDriver().get(ConfingReader.getProperty(istenenUrl));
+
+    }
+
+    @Then("Url de {string} oldugunu test eder")
+    public void urlDeOldugunuTestEder(String arananKelime) {
+        String actualUrl = Driver.getDriver().getCurrentUrl();
+
+        Assert.assertTrue(actualUrl.contains(arananKelime));
 
     }
 }
