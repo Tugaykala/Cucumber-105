@@ -27,3 +27,4 @@ Feature: US1010 Kullanici Scenario Outline ile Editor sayfasinda kayit olusturur
       |Sule       |Saglam   |Test lead|Izmir    |Konak       |2022-02-02  |23000  |
       |Yasar      |U        |QA       |Istanbul |Kadikoy     |2023-01-01  |25000  |
       |Meryem     |Toprak   |QA lead  |Istanbul |levent      |2022-11-11  |20000  |
+      |Tugay      |Kala     |QA       |Istanbul |Besiktas    |2022-11-11  |21000  |
