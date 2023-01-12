@@ -1,7 +1,7 @@
 @wip
   Feature: Kullanici yanlis bilgilerle giris yapamaz
 
-    Scenario: TC10 Gecerli Kullanici adi ve gecersiz sifre ile negatif Login Testi
+    Scenario: TC13 Gecerli Kullanici adi ve gecersiz sifre ile negatif Login Testi
 
       Given kullanici "qdUrl" anasayfaya gider
       Then cookies kapatir
@@ -13,7 +13,7 @@
       And giris yapilamadigini test eder
       Then sayfayi kapatir
 
-    Scenario: TC11 Gecersiz Kullanici adi ve gecerli sifre ile negatif Login Testi
+    Scenario: TC14 Gecersiz Kullanici adi ve gecerli sifre ile negatif Login Testi
 
       Given kullanici "qdUrl" anasayfaya gider
       Then cookies kapatir
@@ -25,7 +25,7 @@
       And giris yapilamadigini test eder
       Then sayfayi kapatir
 
-    Scenario: TC12 Gecersiz Kullanici adi ve gecersiz sifre ile negatif Login Testi
+    Scenario: TC15 Gecersiz Kullanici adi ve gecersiz sifre ile negatif Login Testi
 
       Given kullanici "qdUrl" anasayfaya gider
       Then cookies kapatir

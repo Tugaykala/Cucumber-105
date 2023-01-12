@@ -30,7 +30,7 @@ public class Runner {
         Java method'larini iliskikendirmektir.
 
         tags : features classoru icerisinde yazilan tag(lari) aratip
-        buldugu tum feature veya scenario'lari calistiri
+        buldugu tum feature veya scenario'lari calistirir
 
         dryRun : iki deger alabilir
 
@@ -42,8 +42,6 @@ public class Runner {
 
         false : secilirse, verilen tag ile isaretlenen
                 Feature veya Scenario'lari calistirir
-
-
      */
 
 }
