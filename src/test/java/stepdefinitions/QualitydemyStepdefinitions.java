@@ -11,7 +11,7 @@ public class QualitydemyStepdefinitions {
     QualitydemyPage qualitydemyPage = new QualitydemyPage();
 
     @Then("ilk sayfa login linkine click yapar")
-    public void ilk_sayfa_login_linkine_click_yapar() {
+    public void ilk_sayfa_login_linkine_click_yapar()  {
 
         qualitydemyPage.ilkLoginLinki.click();
 
