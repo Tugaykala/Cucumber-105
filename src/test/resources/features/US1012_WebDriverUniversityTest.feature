@@ -1,4 +1,4 @@
-@wip
+
   Feature: US1012 Window Testi
 
     Scenario:  TC17 Kullanici yeni acilan window'u test edebilmeli
@@ -14,8 +14,6 @@
       Then webuniversity login butonuna basar
       And Popup ta cikan yazinin validation failed oldugunu test eder
       And OK diyerek popup i kapatir
-      And 3 saniye bekler
       Then ilk sayfaya geri doner
       And ilk dondugunu test eder
-      Then 3 saniye bekler
-      And sayfayi kapatir
+      And acilan tum sayfalari kapatir

@@ -11,4 +11,3 @@
       Then login butonuna basar
       And basarili giris yapildigini test eder
       Then 2 saniye bekler
-      Then sayfayi kapatir

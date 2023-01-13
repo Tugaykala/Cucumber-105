@@ -10,5 +10,5 @@
       And Delete butonunun gorunur oldugunu test eder
       Then Delete butonuna basarak butonu siler
       And Delete butonunun gorunmedigini test eder
-      Then sayfayi kapatir
+
     

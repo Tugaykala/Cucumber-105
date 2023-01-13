@@ -11,7 +11,7 @@ Feature: US1009_ Yanlis kullanici adi ve password listesi ile negatif login test
     And 3 saniye bekler
     And login butonuna basar
     And giris yapilamadigini test eder
-    Then sayfayi kapatir
+
 
     Examples:
       |yanlisUsername  |yanlisPassword|
