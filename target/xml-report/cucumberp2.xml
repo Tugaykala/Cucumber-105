@@ -1,42 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="198.869">
-    <testcase classname="US1003 Kullanici parametre olarak giirlen degerleri aratir" name="TC04 Kullanici Parametreli mehtod ile Java aratir" time="59.578">
-        <system-out><![CDATA[Given kullanici amazon anasayfaya gider.....................................passed
-Then amazon arama kutusuna "Java" yazip aratir..............................passed
-And arama sonuclarinin "Java" icerdigini test eder..........................passed
-And sayfayi kapatir.........................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="US1004 Kullanici bastaki ortak adimlar icin Background kullanir" name="TC06 Kullanici Parametreli mehtod ile Nutella aratir" time="76.021">
-        <system-out><![CDATA[Given kullanici amazon anasayfaya gider.....................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="124.033">
+    <testcase classname="US1008 Scenario Outline ile birden fazla data icin test calistirma" name="TC13 Scenario outline ile amazonda arama yapilabilmeli" time="49.168">
+        <system-out><![CDATA[Given kullanici "amazonUrl" anasayfaya gider................................passed
 Then amazon arama kutusuna "Nutella" yazip aratir...........................passed
 And arama sonuclarinin "Nutella" icerdigini test eder.......................passed
-And sayfayi kapatir.........................................................passed
+Then sayfayi kapatir........................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="US1004 Kullanici bastaki ortak adimlar icin Background kullanir" name="TC07 Kullanici Parametreli mehtod ile Java aratir" time="18.641">
-        <system-out><![CDATA[Given kullanici amazon anasayfaya gider.....................................passed
+    <testcase classname="US1008 Scenario Outline ile birden fazla data icin test calistirma" name="TC13 Scenario outline ile amazonda arama yapilabilmeli 2" time="25.471">
+        <system-out><![CDATA[Given kullanici "amazonUrl" anasayfaya gider................................passed
 Then amazon arama kutusuna "Java" yazip aratir..............................passed
 And arama sonuclarinin "Java" icerdigini test eder..........................passed
-And sayfayi kapatir.........................................................passed
+Then sayfayi kapatir........................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="US1004 Kullanici bastaki ortak adimlar icin Background kullanir" name="TC08 Kullanici Parametreli mehtod ile Samsung aratir" time="13.909">
-        <system-out><![CDATA[Given kullanici amazon anasayfaya gider.....................................passed
+    <testcase classname="US1008 Scenario Outline ile birden fazla data icin test calistirma" name="TC13 Scenario outline ile amazonda arama yapilabilmeli 3" time="22.004">
+        <system-out><![CDATA[Given kullanici "amazonUrl" anasayfaya gider................................passed
 Then amazon arama kutusuna "Samsung" yazip aratir...........................passed
 And arama sonuclarinin "Samsung" icerdigini test eder.......................passed
-And sayfayi kapatir.........................................................passed
+Then sayfayi kapatir........................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="US1006 Kullanici configuration dosyasindaki bilgilerle login olabilmeli" name="TC12 Gecerli Kullanici adi ve sifre ile Pozitif Login Testi" time="29.925">
-        <system-out><![CDATA[Given kullanici "qdUrl" anasayfaya gider....................................passed
-And cookies kapatir.........................................................passed
-Then ilk sayfa login linkine click yapar....................................passed
-And kullanici kutusuna "qdGecerliUsername" yazar............................passed
-And password kutusuna "qdGecerliPassword" yazar.............................passed
-Then login butonuna basar...................................................passed
-And basarili giris yapildigini test eder....................................passed
-Then 2 saniye bekler........................................................passed
+    <testcase classname="US1008 Scenario Outline ile birden fazla data icin test calistirma" name="TC13 Scenario outline ile amazonda arama yapilabilmeli 4" time="26.053">
+        <system-out><![CDATA[Given kullanici "amazonUrl" anasayfaya gider................................passed
+Then amazon arama kutusuna "Apple" yazip aratir.............................passed
+And arama sonuclarinin "Apple" icerdigini test eder.........................passed
+Then sayfayi kapatir........................................................passed
 ]]></system-out>
     </testcase>
 </testsuite>

@@ -1,17 +1,117 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="136.105">
-    <testcase classname="US1003 Kullanici parametre olarak giirlen degerleri aratir" name="TC03 Kullanici Parametreli mehtod ile Nutella aratir" time="60.017">
-        <system-out><![CDATA[Given kullanici amazon anasayfaya gider.....................................passed
-Then amazon arama kutusuna "Nutella" yazip aratir...........................passed
-And arama sonuclarinin "Nutella" icerdigini test eder.......................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="203.527">
+    <testcase classname="US1005 Kullanici configuration.properties'de yazilan datalari parametre olarak kullan" name="TC09 Kullanici amazon sitesine gidisi test eder" time="37.992">
+        <system-out><![CDATA[Given kullanici "amazonUrl" anasayfaya gider................................passed
+Then Url de "amazon" oldugunu test eder.....................................passed
 And sayfayi kapatir.........................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="US1003 Kullanici parametre olarak giirlen degerleri aratir" name="TC05 Kullanici Parametreli mehtod ile Samsung aratir" time="75.366">
-        <system-out><![CDATA[Given kullanici amazon anasayfaya gider.....................................passed
-Then amazon arama kutusuna "Samsung" yazip aratir...........................passed
-And arama sonuclarinin "Samsung" icerdigini test eder.......................passed
+    <testcase classname="US1005 Kullanici configuration.properties'de yazilan datalari parametre olarak kullan" name="TC10 Kullanici wisequarter sitesine gidisi test eder" time="22.653">
+        <system-out><![CDATA[Given kullanici "wqUrl" anasayfaya gider....................................passed
+Then Url de "wisequarter" oldugunu test eder................................passed
 And sayfayi kapatir.........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US1005 Kullanici configuration.properties'de yazilan datalari parametre olarak kullan" name="TC11 Kullanici walmart sitesine gidisi test eder" time="23.327">
+        <system-out><![CDATA[Given kullanici "walmartUrl" anasayfaya gider...............................passed
+Then Url de "walmart" oldugunu test eder....................................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US1010 Kullanici Scenario Outline ile Editor sayfasinda kayit olusturur" name="TC15 Editor sayfasinda birden fazla kayit olusturabilmeli" time="15.808">
+        <system-out><![CDATA[When kullanici "editorUrl" anasayfaya gider.................................passed
+Then new butonuna basar.....................................................passed
+And First name kutusuna "Ilker" yazar.......................................passed
+And Last name kutusuna "Bulut" yazar........................................passed
+And position kutusuna "QA" yazar............................................passed
+And Office kutusuna "Istanbul" yazar........................................passed
+And Extension kutusuna "levent" yazar.......................................passed
+And Start date kutusuna "2021-01-01" yazar..................................passed
+And Salary kutusuna "20000" yazar...........................................passed
+And Create tusuna basar.....................................................passed
+When kullanici "Ilker" ile arama yapar......................................passed
+Then isim bolumunde "Ilker" oldugunu dogrular...............................passed
+And 3 saniye bekler.........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US1010 Kullanici Scenario Outline ile Editor sayfasinda kayit olusturur" name="TC15 Editor sayfasinda birden fazla kayit olusturabilmeli 2" time="15.296">
+        <system-out><![CDATA[When kullanici "editorUrl" anasayfaya gider.................................passed
+Then new butonuna basar.....................................................passed
+And First name kutusuna "Ramazan" yazar.....................................passed
+And Last name kutusuna "Can" yazar..........................................passed
+And position kutusuna "QA lead" yazar.......................................passed
+And Office kutusuna "Ankara" yazar..........................................passed
+And Extension kutusuna "Kizilay" yazar......................................passed
+And Start date kutusuna "2021-10-01" yazar..................................passed
+And Salary kutusuna "25000" yazar...........................................passed
+And Create tusuna basar.....................................................passed
+When kullanici "Ramazan" ile arama yapar....................................passed
+Then isim bolumunde "Ramazan" oldugunu dogrular.............................passed
+And 3 saniye bekler.........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US1010 Kullanici Scenario Outline ile Editor sayfasinda kayit olusturur" name="TC15 Editor sayfasinda birden fazla kayit olusturabilmeli 3" time="12.881">
+        <system-out><![CDATA[When kullanici "editorUrl" anasayfaya gider.................................passed
+Then new butonuna basar.....................................................passed
+And First name kutusuna "Sule" yazar........................................passed
+And Last name kutusuna "Saglam" yazar.......................................passed
+And position kutusuna "Test lead" yazar.....................................passed
+And Office kutusuna "Izmir" yazar...........................................passed
+And Extension kutusuna "Konak" yazar........................................passed
+And Start date kutusuna "2022-02-02" yazar..................................passed
+And Salary kutusuna "23000" yazar...........................................passed
+And Create tusuna basar.....................................................passed
+When kullanici "Sule" ile arama yapar.......................................passed
+Then isim bolumunde "Sule" oldugunu dogrular................................passed
+And 3 saniye bekler.........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US1010 Kullanici Scenario Outline ile Editor sayfasinda kayit olusturur" name="TC15 Editor sayfasinda birden fazla kayit olusturabilmeli 4" time="24.595">
+        <system-out><![CDATA[When kullanici "editorUrl" anasayfaya gider.................................passed
+Then new butonuna basar.....................................................passed
+And First name kutusuna "Yasar" yazar.......................................passed
+And Last name kutusuna "U" yazar............................................passed
+And position kutusuna "QA" yazar............................................passed
+And Office kutusuna "Istanbul" yazar........................................passed
+And Extension kutusuna "Kadikoy" yazar......................................passed
+And Start date kutusuna "2023-01-01" yazar..................................passed
+And Salary kutusuna "25000" yazar...........................................passed
+And Create tusuna basar.....................................................passed
+When kullanici "Yasar" ile arama yapar......................................passed
+Then isim bolumunde "Yasar" oldugunu dogrular...............................passed
+And 3 saniye bekler.........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US1010 Kullanici Scenario Outline ile Editor sayfasinda kayit olusturur" name="TC15 Editor sayfasinda birden fazla kayit olusturabilmeli 5" time="24.827">
+        <system-out><![CDATA[When kullanici "editorUrl" anasayfaya gider.................................passed
+Then new butonuna basar.....................................................passed
+And First name kutusuna "Meryem" yazar......................................passed
+And Last name kutusuna "Toprak" yazar.......................................passed
+And position kutusuna "QA lead" yazar.......................................passed
+And Office kutusuna "Istanbul" yazar........................................passed
+And Extension kutusuna "levent" yazar.......................................passed
+And Start date kutusuna "2022-11-11" yazar..................................passed
+And Salary kutusuna "20000" yazar...........................................passed
+And Create tusuna basar.....................................................passed
+When kullanici "Meryem" ile arama yapar.....................................passed
+Then isim bolumunde "Meryem" oldugunu dogrular..............................passed
+And 3 saniye bekler.........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US1010 Kullanici Scenario Outline ile Editor sayfasinda kayit olusturur" name="TC15 Editor sayfasinda birden fazla kayit olusturabilmeli 6" time="24.602">
+        <system-out><![CDATA[When kullanici "editorUrl" anasayfaya gider.................................passed
+Then new butonuna basar.....................................................passed
+And First name kutusuna "Tugay" yazar.......................................passed
+And Last name kutusuna "Kala" yazar.........................................passed
+And position kutusuna "QA" yazar............................................passed
+And Office kutusuna "Istanbul" yazar........................................passed
+And Extension kutusuna "Besiktas" yazar.....................................passed
+And Start date kutusuna "2022-11-11" yazar..................................passed
+And Salary kutusuna "21000" yazar...........................................passed
+And Create tusuna basar.....................................................passed
+When kullanici "Tugay" ile arama yapar......................................passed
+Then isim bolumunde "Tugay" oldugunu dogrular...............................passed
+And 3 saniye bekler.........................................................passed
 ]]></system-out>
     </testcase>
 </testsuite>

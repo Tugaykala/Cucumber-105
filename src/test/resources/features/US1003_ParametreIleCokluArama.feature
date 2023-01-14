@@ -1,7 +1,7 @@
 
 Feature: US1003 Kullanici parametre olarak giirlen degerleri aratir
 
-  @p1
+
   Scenario: TC03 Kullanici Parametreli mehtod ile Nutella aratir
 
     Given kullanici amazon anasayfaya gider
@@ -9,7 +9,7 @@ Feature: US1003 Kullanici parametre olarak giirlen degerleri aratir
     And arama sonuclarinin "Nutella" icerdigini test eder
     And sayfayi kapatir
 
-  @p2
+
   Scenario: TC04 Kullanici Parametreli mehtod ile Java aratir
 
     Given kullanici amazon anasayfaya gider
@@ -17,7 +17,7 @@ Feature: US1003 Kullanici parametre olarak giirlen degerleri aratir
     And arama sonuclarinin "Java" icerdigini test eder
     And sayfayi kapatir
 
-  @p1
+
   Scenario: TC05 Kullanici Parametreli mehtod ile Samsung aratir
 
     Given kullanici amazon anasayfaya gider

@@ -1,4 +1,4 @@
-
+@p1
   Feature: US1005 Kullanici configuration.properties'de yazilan datalari parametre olarak kullan
     # 3 senaryo olusturup, amazon, wisequarter ve walmart anasayfalarina gidin
     # ve o anasyfalara gittigimizi test edin
