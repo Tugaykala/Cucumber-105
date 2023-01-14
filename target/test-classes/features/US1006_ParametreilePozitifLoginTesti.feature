@@ -1,4 +1,4 @@
-
+ @p2
   Feature: US1006 Kullanici configuration dosyasindaki bilgilerle login olabilmeli
 
     Scenario: TC12 Gecerli Kullanici adi ve sifre ile Pozitif Login Testi

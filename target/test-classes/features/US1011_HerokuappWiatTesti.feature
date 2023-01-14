@@ -1,4 +1,4 @@
-@smoke
+
   Feature: US1011 Kullanici herokuapp sayfasinda butonlarin gorunur oldugunu test eder
 
 
