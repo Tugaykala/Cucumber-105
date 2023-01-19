@@ -90,7 +90,7 @@
                     <testFailureIgnore>true</testFailureIgnore>
                     <skipTests>false</skipTests>
                     <includes>
-                        <include>**/runners/*RunnerYeni*.java</include>
+                        <include>**/runners/*RunnerNEW*.java</include>
                     </includes>
                 </configuration>
             </plugin>
@@ -109,7 +109,7 @@
                     <argLine>-Dfile.encoding=UTF-8</argLine>
                     <useFile>false</useFile>
                     <includes>
-                        <include>**/runners/*RunnerYeni*.java</include>
+                        <include>**/runners/*RunnerNEW*.java</include>
                     </includes>
                     <testFailureIgnore>true</testFailureIgnore>
                 </configuration>

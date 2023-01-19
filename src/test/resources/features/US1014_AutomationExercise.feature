@@ -9,4 +9,4 @@
     And Create an Account butonuna basar
     And user kisisel bilgilerini ve iletisim bilgilerini girer
     And user Register butonuna basar
-    Then hesap olustugunu dogrulayin
+    Then hesap olustugunu test edin
